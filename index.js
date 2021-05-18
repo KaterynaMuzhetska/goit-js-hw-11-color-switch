@@ -27,11 +27,11 @@ let intervalId = null;
 
 function activationStart() {
   intervalId = setInterval(changeBgColor, 1000);
-  start.disabled = "";
+  start.disabled = "true";
 }
 
 function clickStop() {
   clearInterval(intervalId);
-  start.disabled = "true";
+  start.disabled = "";
 }
 
